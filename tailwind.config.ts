@@ -20,8 +20,8 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Inter', 'system-ui', 'sans-serif'],
-				serif: ['Cormorant Garamond', 'serif'],
-				heading: ['Cormorant Garamond', 'serif'],
+				serif: ['Poppins', 'sans-serif'],
+				heading: ['Poppins', 'sans-serif'],
 				body: ['Inter', 'system-ui', 'sans-serif'],
 			},
 			colors: {
