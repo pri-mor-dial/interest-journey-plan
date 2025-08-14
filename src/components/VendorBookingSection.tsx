@@ -45,10 +45,10 @@ export default function VendorBookingSection() {
     <section className="py-24 bg-neutral-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold text-neutral-900 mb-4">
             Book Vendors Directly
           </h2>
-          <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+          <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
             Search and book tickets, tours, and experiences from trusted local vendors — all in one place
           </p>
         </div>
@@ -69,7 +69,7 @@ export default function VendorBookingSection() {
                 {/* Header */}
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h3 className="text-xl font-bold text-neutral-900 mb-1 group-hover:text-travel-green transition-colors">
+                    <h3 className="text-lg font-semibold text-neutral-900 mb-1 group-hover:text-travel-green transition-colors">
                       {vendor.name}
                     </h3>
                     <p className="text-sm text-neutral-600">{vendor.type}</p>

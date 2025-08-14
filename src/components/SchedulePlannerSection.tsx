@@ -71,7 +71,7 @@ export default function SchedulePlannerSection() {
 
           {/* Right side - Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+            <h2 className="text-2xl md:text-3xl font-semibold text-neutral-900 mb-6">
               Interactive Schedule Planner
             </h2>
             
@@ -81,7 +81,7 @@ export default function SchedulePlannerSection() {
                   <CheckCircle className="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-neutral-900 mb-2">
+                  <h3 className="text-lg font-semibold text-neutral-900 mb-2">
                     Drag & Drop Simplicity
                   </h3>
                   <p className="text-neutral-600">
@@ -95,7 +95,7 @@ export default function SchedulePlannerSection() {
                   <CheckCircle className="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-neutral-900 mb-2">
+                  <h3 className="text-lg font-semibold text-neutral-900 mb-2">
                     Smart Time Management
                   </h3>
                   <p className="text-neutral-600">
@@ -109,7 +109,7 @@ export default function SchedulePlannerSection() {
                   <CheckCircle className="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-neutral-900 mb-2">
+                  <h3 className="text-lg font-semibold text-neutral-900 mb-2">
                     Real-time Updates
                   </h3>
                   <p className="text-neutral-600">

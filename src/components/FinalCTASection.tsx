@@ -20,7 +20,7 @@ export default function FinalCTASection() {
           </div>
 
           {/* Main Headline */}
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 text-balance">
+          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6 text-balance">
             Your Next Adventure 
             <br />
             <span className="bg-gradient-to-r from-terracotta to-accent-light bg-clip-text text-transparent">
@@ -29,7 +29,7 @@ export default function FinalCTASection() {
           </h2>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto text-balance">
+          <p className="text-lg md:text-xl text-white/90 mb-12 max-w-3xl mx-auto text-balance">
             Join thousands of travelers who've discovered their perfect trips through their passions. 
             Start planning your interest-based adventure today.
           </p>

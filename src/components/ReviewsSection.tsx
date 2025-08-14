@@ -63,10 +63,10 @@ export default function ReviewsSection() {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold text-neutral-900 mb-4">
             Trusted by Travelers Like You
           </h2>
-          <p className="text-xl text-neutral-600">
+          <p className="text-lg text-neutral-600">
             Join thousands of satisfied adventurers who've discovered their perfect trips
           </p>
         </div>
@@ -86,7 +86,7 @@ export default function ReviewsSection() {
               </div>
 
               {/* Review Text */}
-              <blockquote className="text-xl md:text-2xl text-neutral-700 mb-8 italic font-medium text-balance">
+              <blockquote className="text-lg md:text-xl text-neutral-700 mb-8 italic font-medium text-balance">
                 "{reviews[currentReview].comment}"
               </blockquote>
 
@@ -94,7 +94,7 @@ export default function ReviewsSection() {
               <div className="flex items-center justify-center space-x-4">
                 <div className="text-4xl">{reviews[currentReview].avatar}</div>
                 <div className="text-left">
-                  <div className="font-bold text-neutral-900 text-lg">
+                  <div className="font-semibold text-neutral-900">
                     {reviews[currentReview].name}
                   </div>
                   <div className="text-neutral-600">

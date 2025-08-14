@@ -75,10 +75,10 @@ export default function TrendingTripsSection() {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold text-neutral-900 mb-4">
             Trending Interest-Based Trips
           </h2>
-          <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+          <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
             Pre-designed itineraries crafted by experts, ready to customize for your perfect adventure
           </p>
         </div>
@@ -102,7 +102,7 @@ export default function TrendingTripsSection() {
 
               <div className="p-6">
                 {/* Header */}
-                <h3 className="text-xl font-bold text-neutral-900 mb-2 group-hover:text-travel-green transition-colors">
+                <h3 className="text-lg font-semibold text-neutral-900 mb-2 group-hover:text-travel-green transition-colors">
                   {trip.title}
                 </h3>
 

@@ -62,14 +62,14 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center text-white">
         <div className="animate-fade-in-up">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance leading-tight">
+          <h1 className="text-3xl md:text-5xl font-semibold mb-6 text-balance leading-tight">
             Plan Your Trip Around{" "}
             <span className="bg-gradient-to-r from-terracotta to-accent-light bg-clip-text text-transparent">
               What You Love
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto text-balance">
+          <p className="text-lg md:text-xl mb-12 text-white/90 max-w-3xl mx-auto text-balance">
             Discover destinations, create your perfect schedule, and book everything in one place.
           </p>
 
