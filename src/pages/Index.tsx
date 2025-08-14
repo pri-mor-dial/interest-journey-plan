@@ -1,13 +1,41 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
+import SchedulePlannerSection from "@/components/SchedulePlannerSection";
+import VendorBookingSection from "@/components/VendorBookingSection";
+import ReviewsSection from "@/components/ReviewsSection";
+import TrendingTripsSection from "@/components/TrendingTripsSection";
+import FinalCTASection from "@/components/FinalCTASection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "TravelMatch",
+            "description": "Interest-based travel planning platform",
+            "url": "https://travelmatch.com",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://travelmatch.com/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })
+        }}
+      />
+
+      <HeroSection />
+      <HowItWorksSection />
+      <SchedulePlannerSection />
+      <VendorBookingSection />
+      <ReviewsSection />
+      <TrendingTripsSection />
+      <FinalCTASection />
+    </main>
   );
 };
 

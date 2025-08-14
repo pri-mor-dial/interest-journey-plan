@@ -2,87 +2,114 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Travel Planner Design System - Minimalist Airbnb-inspired */
 
 @layer base {
   :root {
+    /* Base neutrals (60% of design) */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 9% 18%;
+    --neutral-50: 0 0% 98%;
+    --neutral-100: 220 14% 96%;
+    --neutral-200: 220 13% 91%;
+    --neutral-300: 216 12% 84%;
+    --neutral-400: 218 11% 65%;
+    --neutral-500: 220 9% 46%;
+    --neutral-600: 215 14% 34%;
+    --neutral-700: 217 19% 27%;
+    --neutral-800: 215 28% 17%;
+    --neutral-900: 220 39% 11%;
 
+    /* Travel Green - Primary (30% of design) */
+    --primary: 158 64% 20%;
+    --primary-light: 158 64% 25%;
+    --primary-lighter: 158 44% 35%;
+    --primary-foreground: 0 0% 100%;
+    --travel-green: 158 64% 20%;
+    --travel-green-light: 158 44% 88%;
+    --travel-green-hover: 158 64% 16%;
+
+    /* Warm Accent - Terracotta (10% of design) */
+    --accent: 14 78% 62%;
+    --accent-light: 14 78% 72%;
+    --accent-lighter: 14 58% 88%;
+    --accent-foreground: 0 0% 100%;
+    --terracotta: 14 78% 62%;
+    --terracotta-light: 14 58% 88%;
+
+    /* UI Elements */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 220 9% 18%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 9% 18%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 9% 18%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 158 64% 20%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--neutral-50)), hsl(var(--neutral-100)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--terracotta)), hsl(var(--accent-light)));
+    --gradient-green: linear-gradient(135deg, hsl(var(--travel-green)), hsl(var(--primary-light)));
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Shadows */
+    --shadow-soft: 0 4px 24px -8px hsl(var(--neutral-300) / 0.3);
+    --shadow-medium: 0 8px 32px -8px hsl(var(--neutral-400) / 0.25);
+    --shadow-strong: 0 16px 48px -16px hsl(var(--neutral-500) / 0.3);
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Border radius for modern look */
+    --radius-soft: 12px;
+    --radius-card: 16px;
+    --radius-button: 8px;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 220 39% 11%;
+    --foreground: 0 0% 98%;
+    --neutral-50: 220 39% 11%;
+    --neutral-100: 217 19% 27%;
+    --neutral-200: 215 14% 34%;
+    --neutral-300: 220 9% 46%;
+    --neutral-400: 218 11% 65%;
+    --neutral-500: 216 12% 84%;
+    --neutral-600: 220 13% 91%;
+    --neutral-700: 220 14% 96%;
+    --neutral-800: 0 0% 98%;
+    --neutral-900: 0 0% 100%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --card: 220 39% 11%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 39% 11%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 158 44% 35%;
+    --primary-foreground: 220 39% 11%;
+    --secondary: 217 19% 27%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 217 19% 27%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 14 78% 72%;
+    --accent-foreground: 220 39% 11%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 217 19% 27%;
+    --input: 217 19% 27%;
+    --ring: 158 44% 35%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +127,95 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-neutral-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-400;
+  }
+}
+
+@layer components {
+  /* Travel-specific component classes */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .accent-gradient {
+    background: var(--gradient-accent);
+  }
+
+  .green-gradient {
+    background: var(--gradient-green);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
