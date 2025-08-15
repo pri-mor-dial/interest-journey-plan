@@ -2,40 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Travel Planner Design System - Minimalist Airbnb-inspired */
+/* Hiking Website Design System - Minimalist Airbnb-inspired */
 
 @layer base {
   :root {
     /* Base neutrals (60% of design) */
     --background: 0 0% 100%;
-    --foreground: 220 9% 18%;
+    --foreground: 215 16% 20%;
     --neutral-50: 0 0% 98%;
-    --neutral-100: 220 14% 96%;
-    --neutral-200: 220 13% 91%;
-    --neutral-300: 216 12% 84%;
-    --neutral-400: 218 11% 65%;
-    --neutral-500: 220 9% 46%;
-    --neutral-600: 215 14% 34%;
-    --neutral-700: 217 19% 27%;
-    --neutral-800: 215 28% 17%;
-    --neutral-900: 220 39% 11%;
+    --neutral-100: 210 20% 96%;
+    --neutral-200: 214 15% 91%;
+    --neutral-300: 213 13% 84%;
+    --neutral-400: 215 12% 65%;
+    --neutral-500: 215 16% 46%;
+    --neutral-600: 215 22% 34%;
+    --neutral-700: 215 25% 27%;
+    --neutral-800: 217 33% 17%;
+    --neutral-900: 215 39% 11%;
 
-    /* Travel Green - Primary (30% of design) */
-    --primary: 158 64% 20%;
-    --primary-light: 158 64% 25%;
-    --primary-lighter: 158 44% 35%;
+    /* Forest Green - Primary (30% of design) */
+    --primary: 143 50% 18%;
+    --primary-light: 143 45% 25%;
+    --primary-lighter: 143 35% 35%;
     --primary-foreground: 0 0% 100%;
-    --travel-green: 158 64% 20%;
-    --travel-green-light: 158 44% 88%;
-    --travel-green-hover: 158 64% 16%;
+    --hiking-green: 143 50% 18%;
+    --hiking-green-light: 143 35% 88%;
+    --hiking-green-hover: 143 55% 15%;
 
-    /* Warm Accent - Terracotta (10% of design) */
-    --accent: 14 78% 62%;
-    --accent-light: 14 78% 72%;
-    --accent-lighter: 14 58% 88%;
+    /* Warm Accent - Earth Orange (10% of design) */
+    --accent: 25 85% 55%;
+    --accent-light: 25 85% 65%;
+    --accent-lighter: 25 65% 85%;
     --accent-foreground: 0 0% 100%;
-    --terracotta: 14 78% 62%;
-    --terracotta-light: 14 58% 88%;
+    --earth-orange: 25 85% 55%;
+    --earth-orange-light: 25 65% 85%;
 
     /* UI Elements */
     --card: 0 0% 100%;

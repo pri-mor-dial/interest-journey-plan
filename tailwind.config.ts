@@ -74,14 +74,14 @@ export default {
 					800: 'hsl(var(--neutral-800))',
 					900: 'hsl(var(--neutral-900))'
 				},
-				'travel-green': {
-					DEFAULT: 'hsl(var(--travel-green))',
-					light: 'hsl(var(--travel-green-light))',
-					hover: 'hsl(var(--travel-green-hover))'
+				'hiking-green': {
+					DEFAULT: 'hsl(var(--hiking-green))',
+					light: 'hsl(var(--hiking-green-light))',
+					hover: 'hsl(var(--hiking-green-hover))'
 				},
-				terracotta: {
-					DEFAULT: 'hsl(var(--terracotta))',
-					light: 'hsl(var(--terracotta-light))'
+				'earth-orange': {
+					DEFAULT: 'hsl(var(--earth-orange))',
+					light: 'hsl(var(--earth-orange-light))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
