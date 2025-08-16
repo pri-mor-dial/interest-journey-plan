@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
+import storyAnnapurna from "@/assets/story-annapurna.jpg";
+import storyFuji from "@/assets/story-fuji.jpg";
 
 const stories = [
   {
@@ -10,7 +12,8 @@ const stories = [
     rating: 5,
     quote: "The Annapurna Base Camp trek was absolutely life-changing. The guides were knowledgeable and the mountain views were breathtaking.",
     trail: "Annapurna Base Camp, Nepal",
-    verified: true
+    verified: true,
+    photo: storyAnnapurna
   },
   {
     id: 2,
@@ -20,7 +23,8 @@ const stories = [
     rating: 5,
     quote: "Mount Fuji summit at sunrise was a spiritual experience. The preparation tips on this site were incredibly helpful.",
     trail: "Mount Fuji, Japan",
-    verified: true
+    verified: true,
+    photo: storyFuji
   }
 ];
 
@@ -54,18 +58,21 @@ export default function CommunityStoriesSection() {
                 className="animate-fade-in"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <Card className="border-0 shadow-none bg-transparent">
-                  <CardContent className="p-0">
-                    {/* Large Quote */}
-                    <div className="mb-6">
-                      <Quote className="w-8 h-8 text-hiking-green/20 mb-4" />
-                      <blockquote className="text-xl text-neutral-700 font-light leading-relaxed">
-                        "{story.quote}"
-                      </blockquote>
+                <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover-scale">
+                  <div className="relative h-48 overflow-hidden">
+                    <img 
+                      src={story.photo} 
+                      alt={`${story.trail} hiking experience`}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-4 right-4 bg-hiking-green-light text-hiking-green px-3 py-1 rounded-full text-xs font-medium">
+                      {story.verified && "Verified Hiker"}
                     </div>
-
+                  </div>
+                  
+                  <CardContent className="p-6">
                     {/* Trail and Rating */}
-                    <div className="mb-6">
+                    <div className="mb-4">
                       <p className="text-sm text-hiking-green font-medium mb-2">
                         {story.trail}
                       </p>
@@ -86,9 +93,14 @@ export default function CommunityStoriesSection() {
                       </div>
                     </div>
 
+                    {/* Quote */}
+                    <blockquote className="text-neutral-700 font-light leading-relaxed mb-4">
+                      "{story.quote}"
+                    </blockquote>
+
                     {/* User Info */}
                     <div className="flex items-center space-x-3">
-                      <div className="text-3xl">
+                      <div className="text-2xl">
                         {story.avatar}
                       </div>
                       <div>
@@ -99,11 +111,6 @@ export default function CommunityStoriesSection() {
                           {story.location}
                         </p>
                       </div>
-                      {story.verified && (
-                        <div className="bg-hiking-green-light text-hiking-green px-3 py-1 rounded-full text-xs font-medium ml-auto">
-                          Verified Hiker
-                        </div>
-                      )}
                     </div>
                   </CardContent>
                 </Card>
