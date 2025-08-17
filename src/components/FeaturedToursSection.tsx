@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Clock, Users, Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const featuredTours = [
   {
@@ -93,6 +94,7 @@ const difficultyColors = {
 export default function FeaturedToursSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
 
   const scrollToNext = () => {
     if (scrollRef.current) {
@@ -229,7 +231,15 @@ export default function FeaturedToursSection() {
                     <div className="text-xl font-semibold text-hiking-green">
                       {tour.price}
                     </div>
-                    <Button size="sm" className="bg-hiking-green hover:bg-hiking-green-hover">
+                    <Button 
+                      size="sm" 
+                      className="bg-hiking-green hover:bg-hiking-green-hover"
+                      onClick={() => {
+                        if (tour.id === 1) {
+                          navigate('/mount-fuji-trail');
+                        }
+                      }}
+                    >
                       View Tour
                     </Button>
                   </div>
