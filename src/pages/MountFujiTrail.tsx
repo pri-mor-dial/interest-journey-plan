@@ -93,20 +93,37 @@ export default function MountFujiTrail() {
       <Navigation />
       
       <main className="min-h-screen">
-        {/* Hero Section - Split Screen */}
+        {/* Hero Section - Split Screen with Integrated Overview */}
         <section className="relative min-h-screen flex items-center bg-gradient-to-br from-neutral-50 to-sky-50">
           <div className="max-w-7xl mx-auto px-6 w-full">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               
               {/* Left - Content */}
-              <div className="space-y-6">
-                <div className="space-y-4">
-                  <h1 className="text-4xl lg:text-5xl xl:text-6xl font-heading font-bold text-neutral-900 leading-tight">
-                    Mount Fuji <br />
-                    <span className="text-hiking-green">Summit Trail</span>
-                  </h1>
-                  <p className="text-xl lg:text-2xl text-neutral-600 font-light">
+              <div className="space-y-8">
+                <div className="space-y-6">
+                  <div className="space-y-3">
+                    <h1 className="text-4xl lg:text-5xl font-heading font-bold text-neutral-900 leading-tight">
+                      Mount Fuji <br />
+                      <span className="text-hiking-green">Summit Trail</span>
+                    </h1>
+                    <h2 className="text-2xl lg:text-3xl font-heading font-light text-neutral-700 italic">
+                      A Sacred Journey
+                    </h2>
+                  </div>
+                  <p className="text-lg lg:text-xl text-neutral-600 font-light">
                     Climb Japan's iconic peak with respect and preparation.
+                  </p>
+                </div>
+                
+                {/* Integrated Overview Content */}
+                <div className="space-y-4 text-base text-neutral-700 leading-relaxed max-w-lg">
+                  <p>
+                    Mount Fuji stands as Japan's most revered symbol, combining natural beauty with deep spiritual significance. 
+                    The official climbing season runs from <strong>July to September</strong>, when mountain huts and trails are fully accessible.
+                  </p>
+                  <p className="text-sm bg-hiking-green-light/20 p-4 rounded-lg border-l-4 border-hiking-green">
+                    <strong>Important Notice:</strong> As of 2025, a climbing fee system has been implemented to support mountain preservation 
+                    and enhance safety measures. This initiative helps protect Fuji-san for future generations while ensuring climber safety.
                   </p>
                 </div>
               </div>
@@ -156,25 +173,6 @@ export default function MountFujiTrail() {
           {/* Scroll Down Arrow */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <ChevronDown className="w-6 h-6 text-neutral-400" />
-          </div>
-        </section>
-
-        {/* Overview Section */}
-        <section className="py-16 bg-white">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-2xl font-heading font-semibold text-neutral-900 mb-6">
-              A Sacred Journey
-            </h2>
-            <div className="space-y-4 text-lg text-neutral-700 leading-relaxed">
-              <p>
-                Mount Fuji stands as Japan's most revered symbol, combining natural beauty with deep spiritual significance. 
-                The official climbing season runs from <strong>July to September</strong>, when mountain huts and trails are fully accessible.
-              </p>
-              <p>
-                <strong>Important Notice:</strong> As of 2025, a climbing fee system has been implemented to support mountain preservation 
-                and enhance safety measures. This initiative helps protect Fuji-san for future generations while ensuring climber safety.
-              </p>
-            </div>
           </div>
         </section>
 
