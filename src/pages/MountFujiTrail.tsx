@@ -15,6 +15,10 @@ import {
   Users,
   ArrowRight
 } from "lucide-react";
+import gearHikingBoots from "@/assets/gear-hiking-boots.png";
+import gearLayeredClothing from "@/assets/gear-layered-clothing.png";
+import gearWaterBottles from "@/assets/gear-water-bottles.png";
+import gearWeatherProtection from "@/assets/gear-weather-protection.png";
 
 const tourOperators = [
   {
@@ -206,7 +210,7 @@ export default function MountFujiTrail() {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
               {tourOperators.map((operator, index) => (
                 <Card key={operator.id} className="overflow-hidden shadow-soft hover:shadow-medium transition-all hover-scale">
                   <div className="h-32 bg-gradient-to-br from-hiking-green-light to-sky-100 flex items-center justify-center text-4xl">
@@ -237,6 +241,13 @@ export default function MountFujiTrail() {
                 </Card>
               ))}
             </div>
+            
+            <div className="text-center">
+              <Button size="lg" className="bg-hiking-green hover:bg-hiking-green-hover text-white">
+                Find a Guided Tour
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </div>
           </div>
         </section>
 
@@ -258,14 +269,28 @@ export default function MountFujiTrail() {
                   Packing Essentials
                 </AccordionTrigger>
                 <AccordionContent className="text-neutral-700 pt-2">
-                  <ul className="space-y-2">
-                    <li>• Layered clothing (temperatures drop significantly at altitude)</li>
-                    <li>• Waterproof jacket and pants</li>
-                    <li>• Sturdy hiking boots with ankle support</li>
-                    <li>• Headlamp and extra batteries</li>
-                    <li>• Sunscreen and sunglasses</li>
-                    <li>• Plenty of water and high-energy snacks</li>
-                  </ul>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <ul className="space-y-2">
+                        <li>• Layered clothing (temperatures drop significantly at altitude)</li>
+                        <li>• Waterproof jacket and pants</li>
+                        <li>• Sturdy hiking boots with ankle support</li>
+                        <li>• Headlamp and extra batteries</li>
+                        <li>• Sunscreen and sunglasses</li>
+                        <li>• Plenty of water and high-energy snacks</li>
+                      </ul>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="flex flex-col items-center">
+                        <img src={gearHikingBoots} alt="Hiking boots" className="w-16 h-16 object-contain mb-2" />
+                        <span className="text-xs text-neutral-500">Hiking Boots</span>
+                      </div>
+                      <div className="flex flex-col items-center">
+                        <img src={gearLayeredClothing} alt="Layered clothing" className="w-16 h-16 object-contain mb-2" />
+                        <span className="text-xs text-neutral-500">Layered Clothing</span>
+                      </div>
+                    </div>
+                  </div>
                 </AccordionContent>
               </AccordionItem>
               
@@ -274,8 +299,18 @@ export default function MountFujiTrail() {
                   Weather Awareness
                 </AccordionTrigger>
                 <AccordionContent className="text-neutral-700 pt-2">
-                  <p>Weather on Fuji changes rapidly. Even in summer, temperatures at the summit can drop below freezing. 
-                     Check current conditions and be prepared to turn back if weather deteriorates.</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <p>Weather on Fuji changes rapidly. Even in summer, temperatures at the summit can drop below freezing. 
+                         Check current conditions and be prepared to turn back if weather deteriorates.</p>
+                    </div>
+                    <div className="flex justify-center">
+                      <div className="flex flex-col items-center">
+                        <img src={gearWeatherProtection} alt="Weather protection gear" className="w-16 h-16 object-contain mb-2" />
+                        <span className="text-xs text-neutral-500">Weather Protection</span>
+                      </div>
+                    </div>
+                  </div>
                 </AccordionContent>
               </AccordionItem>
               
@@ -284,8 +319,18 @@ export default function MountFujiTrail() {
                   Altitude Tips
                 </AccordionTrigger>
                 <AccordionContent className="text-neutral-700 pt-2">
-                  <p>Take regular breaks, stay hydrated, and ascend slowly. If you experience severe headaches, 
-                     nausea, or dizziness, descend immediately. Consider spending time at the 5th Station to acclimatize.</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <p>Take regular breaks, stay hydrated, and ascend slowly. If you experience severe headaches, 
+                         nausea, or dizziness, descend immediately. Consider spending time at the 5th Station to acclimatize.</p>
+                    </div>
+                    <div className="flex justify-center">
+                      <div className="flex flex-col items-center">
+                        <img src={gearWaterBottles} alt="Hydration gear" className="w-16 h-16 object-contain mb-2" />
+                        <span className="text-xs text-neutral-500">Hydration Gear</span>
+                      </div>
+                    </div>
+                  </div>
                 </AccordionContent>
               </AccordionItem>
               
