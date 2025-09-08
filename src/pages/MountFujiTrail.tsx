@@ -19,6 +19,9 @@ import gearHikingBoots from "@/assets/gear-hiking-boots.png";
 import gearLayeredClothing from "@/assets/gear-layered-clothing.png";
 import gearWaterBottles from "@/assets/gear-water-bottles.png";
 import gearWeatherProtection from "@/assets/gear-weather-protection.png";
+import tourFujiSunriseGroup from "@/assets/tour-fuji-sunrise-group.jpg";
+import tourFujiCulturalGroup from "@/assets/tour-fuji-cultural-group.jpg";
+import tourFujiSpiritualGroup from "@/assets/tour-fuji-spiritual-group.jpg";
 
 const tourOperators = [
   {
@@ -27,7 +30,7 @@ const tourOperators = [
     highlight: "Sunrise Summit Tour",
     price: "From ¥18,000",
     duration: "2 days",
-    image: "🌅",
+    image: tourFujiSunriseGroup,
     rating: 4.9
   },
   {
@@ -36,7 +39,7 @@ const tourOperators = [
     highlight: "Cultural Heritage Trek",
     price: "From ¥15,500",
     duration: "2 days",
-    image: "⛩️",
+    image: tourFujiCulturalGroup,
     rating: 4.8
   },
   {
@@ -45,7 +48,7 @@ const tourOperators = [
     highlight: "Spiritual Journey Experience",
     price: "From ¥20,000",
     duration: "3 days",
-    image: "🗻",
+    image: tourFujiSpiritualGroup,
     rating: 4.9
   }
 ];
@@ -178,8 +181,12 @@ export default function MountFujiTrail() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
               {tourOperators.map((operator, index) => (
                 <Card key={operator.id} className="overflow-hidden shadow-soft hover:shadow-medium transition-all hover-scale">
-                  <div className="h-32 bg-gradient-to-br from-hiking-green-light to-sky-100 flex items-center justify-center text-4xl">
-                    {operator.image}
+                  <div className="h-32 relative overflow-hidden">
+                    <img 
+                      src={operator.image} 
+                      alt={`${operator.name} tour group`}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <CardContent className="p-6">
                     <div className="mb-4">
