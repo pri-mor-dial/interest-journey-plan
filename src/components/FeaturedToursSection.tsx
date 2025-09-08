@@ -3,13 +3,19 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Clock, Users, Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import tourMountFuji from "@/assets/tour-mount-fuji.jpg";
+import tourAnnapurna from "@/assets/tour-annapurna.jpg";
+import tourSapaTerraces from "@/assets/tour-sapa-terraces.jpg";
+import tourKinabalu from "@/assets/tour-kinabalu.jpg";
+import tourBromo from "@/assets/tour-bromo.jpg";
+import tourTigersNest from "@/assets/tour-tigers-nest.jpg";
 
 const featuredTours = [
   {
     id: 1,
     name: "Mount Fuji Summit Trail",
     location: "Japan",
-    image: "🗻",
+    image: tourMountFuji,
     difficulty: "Hard",
     distance: "19.3 km",
     duration: "2 days",
@@ -22,7 +28,7 @@ const featuredTours = [
     id: 2,
     name: "Annapurna Base Camp",
     location: "Nepal",
-    image: "🏔️",
+    image: tourAnnapurna,
     difficulty: "Moderate",
     distance: "115 km",
     duration: "12 days",
@@ -35,7 +41,7 @@ const featuredTours = [
     id: 3,
     name: "Sapa Rice Terraces Trek",
     location: "Vietnam",
-    image: "🌾",
+    image: tourSapaTerraces,
     difficulty: "Easy",
     distance: "15 km",
     duration: "3 days",
@@ -48,7 +54,7 @@ const featuredTours = [
     id: 4,
     name: "Mount Kinabalu",
     location: "Malaysia",
-    image: "⛰️",
+    image: tourKinabalu,
     difficulty: "Hard",
     distance: "8.7 km",
     duration: "2 days",
@@ -61,7 +67,7 @@ const featuredTours = [
     id: 5,
     name: "Bromo Tengger Trek",
     location: "Indonesia",
-    image: "🌋",
+    image: tourBromo,
     difficulty: "Moderate",
     distance: "12 km",
     duration: "2 days",
@@ -74,7 +80,7 @@ const featuredTours = [
     id: 6,
     name: "Tiger's Nest Monastery",
     location: "Bhutan",
-    image: "🏛️",
+    image: tourTigersNest,
     difficulty: "Moderate",
     distance: "6 km",
     duration: "1 day",
@@ -169,8 +175,12 @@ export default function FeaturedToursSection() {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Tour Image */}
-                <div className="h-48 bg-gradient-to-br from-hiking-green-light to-neutral-100 flex items-center justify-center text-6xl relative">
-                  {tour.image}
+                <div className="h-48 bg-gradient-to-br from-hiking-green-light to-neutral-100 relative overflow-hidden">
+                  <img 
+                    src={tour.image} 
+                    alt={tour.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                   <div className="absolute top-4 right-4">
                     <Badge className={difficultyColors[tour.difficulty as keyof typeof difficultyColors]}>
                       {tour.difficulty}
