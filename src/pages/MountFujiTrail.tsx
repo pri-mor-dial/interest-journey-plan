@@ -106,9 +106,6 @@ export default function MountFujiTrail() {
                       Mount Fuji <br />
                       <span className="text-hiking-green">Summit Trail</span>
                     </h1>
-                    <h2 className="text-2xl lg:text-3xl font-heading font-light text-neutral-700 italic">
-                      A Sacred Journey
-                    </h2>
                   </div>
                   <p className="text-lg lg:text-xl text-neutral-600 font-light">
                     Climb Japan's iconic peak with respect and preparation.
@@ -118,7 +115,6 @@ export default function MountFujiTrail() {
                 {/* Integrated Overview Content */}
                 <div className="space-y-4 text-base text-neutral-700 leading-relaxed max-w-lg">
                   <p>
-                    Mount Fuji stands as Japan's most revered symbol, combining natural beauty with deep spiritual significance. 
                     The official climbing season runs from <strong>July to September</strong>, when mountain huts and trails are fully accessible.
                   </p>
                   <p className="text-sm bg-hiking-green-light/20 p-4 rounded-lg border-l-4 border-hiking-green">
@@ -128,43 +124,14 @@ export default function MountFujiTrail() {
                 </div>
               </div>
 
-              {/* Right - Visual Illustration */}
-              <div className="relative">
-                <div className="relative z-10 flex items-center justify-center">
-                  {/* Mountain Silhouette */}
-                  <div className="relative">
-                    <div className="w-96 h-96 relative">
-                      {/* Main Mountain */}
-                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
-                        <div className="w-80 h-64 bg-gradient-to-t from-neutral-600 via-neutral-500 to-neutral-300 
-                                      polygon-mountain relative overflow-hidden rounded-t-full">
-                          {/* Snow Cap */}
-                          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 
-                                        w-32 h-24 bg-gradient-to-b from-white to-neutral-100 rounded-t-full">
-                          </div>
-                        </div>
-                      </div>
-                      
-                      {/* Floating Elements */}
-                      <div className="absolute top-12 right-12 animate-bounce" style={{ animationDelay: '0.5s' }}>
-                        <div className="w-12 h-12 bg-hiking-green-light rounded-full flex items-center justify-center">
-                          🌸
-                        </div>
-                      </div>
-                      
-                      <div className="absolute top-32 left-8 animate-pulse" style={{ animationDelay: '1s' }}>
-                        <div className="w-10 h-10 bg-sky-100 rounded-full flex items-center justify-center">
-                          ⛩️
-                        </div>
-                      </div>
-                      
-                      <div className="absolute bottom-20 right-20 animate-bounce" style={{ animationDelay: '1.5s' }}>
-                        <div className="w-8 h-8 bg-earth-orange-light rounded-full flex items-center justify-center">
-                          🏔️
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              {/* Right - Mount Fuji Graphic */}
+              <div className="relative flex items-center justify-center">
+                <div className="w-full max-w-lg">
+                  <img 
+                    src="/lovable-uploads/4367aa6e-137b-414c-be65-a8a8357df202.png" 
+                    alt="Mount Fuji elevation profile - Fujisan, 3,776m, 12,389ft, Honshu, Japan"
+                    className="w-full h-auto"
+                  />
                 </div>
               </div>
             </div>
