@@ -37,8 +37,7 @@ export default function HikingCTASection() {
             </Button>
             <Button 
               size="lg" 
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-hiking-green font-semibold px-8 py-4"
+              className="bg-neutral-900 text-white hover:bg-neutral-800 border-0 font-semibold px-8 py-4"
             >
               Start Planning
             </Button>
