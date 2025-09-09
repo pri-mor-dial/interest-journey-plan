@@ -102,11 +102,8 @@ export default function HikingInsightsSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-3xl font-heading font-semibold text-neutral-900 mb-4">
-            Hiking Insights & Facts
+            What Makes Each Trail Unique
           </h2>
-          <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Learn from experts and discover essential knowledge for safe, enjoyable hiking
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">

@@ -1,14 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Star, Quote } from "lucide-react";
 import storyAnnapurna from "@/assets/story-annapurna.jpg";
 import storyFuji from "@/assets/story-fuji.jpg";
+import avatarSarahChen from "@/assets/avatar-sarah-chen.jpg";
+import avatarHiroshiTanaka from "@/assets/avatar-hiroshi-tanaka.jpg";
 
 const stories = [
   {
     id: 1,
     name: "Sarah Chen",
     location: "Singapore",
-    avatar: "👩‍🦱",
+    avatar: avatarSarahChen,
     rating: 5,
     quote: "The Annapurna Base Camp trek was absolutely life-changing. The guides were knowledgeable and the mountain views were breathtaking.",
     trail: "Annapurna Base Camp, Nepal",
@@ -19,7 +22,7 @@ const stories = [
     id: 2,
     name: "Hiroshi Tanaka",
     location: "Tokyo", 
-    avatar: "👨‍💼",
+    avatar: avatarHiroshiTanaka,
     rating: 5,
     quote: "Mount Fuji summit at sunrise was a spiritual experience. The preparation tips on this site were incredibly helpful.",
     trail: "Mount Fuji, Japan",
@@ -32,9 +35,7 @@ export default function CommunityStoriesSection() {
   return (
     <section className="relative">
       {/* Photo Header */}
-      <div className="relative h-80 bg-gradient-to-br from-hiking-green to-hiking-green-dark overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDM1TDM0LjY0MSAxMkg1LjM1OUwyMCAzNVoiIGZpbGw9IndoaXRlIiBmaWxsLW9wYWNpdHk9IjAuMDMiLz4KPC9zdmc+')] opacity-30"></div>
+      <div className="relative h-80 bg-hiking-green overflow-hidden">
         
         <div className="relative h-full flex items-center justify-center text-center z-10">
           <div>
@@ -100,9 +101,10 @@ export default function CommunityStoriesSection() {
 
                     {/* User Info */}
                     <div className="flex items-center space-x-3">
-                      <div className="text-2xl">
-                        {story.avatar}
-                      </div>
+                      <Avatar className="w-12 h-12">
+                        <AvatarImage src={story.avatar} alt={story.name} />
+                        <AvatarFallback>{story.name.charAt(0)}</AvatarFallback>
+                      </Avatar>
                       <div>
                         <p className="font-medium text-neutral-900">
                           {story.name}

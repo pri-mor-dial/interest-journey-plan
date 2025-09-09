@@ -134,9 +134,6 @@ export default function FeaturedToursSection() {
           <h2 className="text-2xl md:text-3xl font-heading font-semibold text-neutral-900 mb-4">
             Featured Hiking Tours
           </h2>
-          <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Curated adventures across Southeast and East Asia's most stunning trails
-          </p>
         </div>
 
         {/* Tour Cards Carousel */}

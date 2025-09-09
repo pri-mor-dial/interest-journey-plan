@@ -38,7 +38,7 @@ export default function PlanTripSection() {
             Plan Your Perfect Trip
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Everything you need to prepare for an unforgettable hiking adventure
+            Hiking preparation tips.
           </p>
         </div>
 

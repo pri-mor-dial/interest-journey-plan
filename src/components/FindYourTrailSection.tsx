@@ -125,9 +125,6 @@ const FindYourTrailSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Find Your Trail
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover incredible trekking adventures across Asia's most stunning landscapes
-          </p>
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
