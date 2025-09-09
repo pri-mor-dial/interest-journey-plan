@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import HikingHeroSection from "@/components/HikingHeroSection";
+import FindYourTrailSection from "@/components/FindYourTrailSection";
 import FeaturedToursSection from "@/components/FeaturedToursSection";
 import PlanTripSection from "@/components/PlanTripSection";
 import HikingInsightsSection from "@/components/HikingInsightsSection";
@@ -51,6 +52,7 @@ const Index = () => {
       
       <main className="min-h-screen">
         <HikingHeroSection />
+        <FindYourTrailSection />
         <FeaturedToursSection />
         <PlanTripSection />
         <HikingInsightsSection />
