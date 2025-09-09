@@ -47,7 +47,13 @@ export default function Navigation() {
               href="#about" 
               className="text-neutral-700 hover:text-hiking-green transition-colors font-medium"
             >
-              About / Contact
+              About
+            </a>
+            <a 
+              href="#contact" 
+              className="text-neutral-700 hover:text-hiking-green transition-colors font-medium"
+            >
+              Contact
             </a>
           </div>
 
@@ -96,7 +102,13 @@ export default function Navigation() {
                 href="#about" 
                 className="text-neutral-700 hover:text-hiking-green transition-colors font-medium"
               >
-                About / Contact
+                About
+              </a>
+              <a 
+                href="#contact" 
+                className="text-neutral-700 hover:text-hiking-green transition-colors font-medium"
+              >
+                Contact
               </a>
             </div>
           </div>
